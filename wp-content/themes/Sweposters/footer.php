@@ -11,14 +11,14 @@
 
 <footer>
     <div class="container">
-    <img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/05/footer-banner.png')); ?>" alt="footer-banner">
+    <!-- <img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/05/footer-banner.png')); ?>" alt="footer-banner">
 
-    <div class="flaggor" style="background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/2024/05/flaggor-2.webp')); ?>');"></div>
+    <div class="flaggor" style="background-image: url('<?php echo esc_url(home_url('/wp-content/uploads/2024/05/flaggor-2.webp')); ?>');"></div> -->
 
     
     <div class="content">
         <div class="column">
-            <div class="category-title">Party Pulse</div>
+            <div class="category-title">Sweposters</div>
             <?php wp_nav_menu(array(
                 'theme_location' => 'footer-party-pulse',
                 'menu_id' => 'footer-party-pulse',
@@ -71,12 +71,12 @@
     <img src="<?php echo esc_url(home_url('/wp-content/uploads/2024/05/Wordmark_Transparent_And_Black-1.png')); ?>" alt="klarna">
    
     </div>
-    <p class="contact-info">Kundservice har öppet helgfria vardagar kl 08.30-18.00 via telefon 072-210 20 40, e-post kundservice@partypulsen.se och chatt.</p>
+    <p class="contact-info">Kundservice har öppet helgfria vardagar kl 08.30-18.00 via telefon 070-000 00 00.</p>
 </div>
 
 
         <div class="rights">
-            <p>&copy; <?php echo date('Y'); ?> Party Pulse AB. All rights reserved.</p>
+            <p>&copy; <?php echo date('Y'); ?> Sweposters. All rights reserved.</p>
         </div>
     </div>
 </footer>

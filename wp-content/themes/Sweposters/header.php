@@ -1,109 +1,29 @@
-<html>
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
 
 <head>
-    <?php wp_head() ?>
+    <?php wp_head(); ?> <!-- This includes essential WordPress styles and scripts -->
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
+    <div class="top-header">
+    <h1 class="Logo">
+        <a href="http://sweposters.test/" title="Sweposters Home">Sweposters</a>
+    </h1>
+</div>
 
     <header class="header">
         <div class="headerleft">
-        
-        <div class="logo">
-            <?php
-            $menu = array(
-                'theme_location' => 'headermenu-home',
-                'menu_id' => 'headermenu-home',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            );
-            
-            wp_nav_menu($menu);
-            ?>
-            
-          </div>
-        
-          <button class="kategorier" id="openModalBtn">
-          <a href="">kategorier</a>  
-          </button>
-            
-            
-            <?php
-            $menu = array(
-                'theme_location' => 'headermenu-left',
-                'menu_id' => 'headermenu-left',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            );
-            
-            wp_nav_menu($menu);
-            ?>
+            <div class="logo">
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'primary-menu', // Ensure this matches the registered location
+                    'menu_id' => 'primary-menu',
+                    'container' => 'nav',
+                    'container_class' => 'menu'
+                ));
+                ?>
+            </div>
         </div>
-
-<div class="headerRight">
-<?php
-            $menu = array(
-                'theme_location' => 'headermenu-right',
-                'menu_id' => 'headermenu-right',
-                'container' => 'nav',
-                'container_class' => 'menu'
-            );
-
-            wp_nav_menu($menu);
-            ?>
-
-
-</div>
-
-
-
-
-
-<div id="modal" class="modal">
-    <div class="modal-content">
-      
-    <div class="header"> <h2>Kategorier</h2>
-      <span class="close">X</span></div>
-   
-    <?php echo do_shortcode('[product_categories]'); ?>
-
-   
-
-    </div>
-    <div class="skämt"><p id="skämt">Vad sa ölet till champagnen?</p>
-    <p id="skämt">Du är så bubblig idag!</p></div>
-    
-    <?php include('footerModul.php') ?>
-</div>
-
     </header>
-
-    </body>
-
-<script>
-
-var modal = document.getElementById("modal");
-var btn = document.getElementById("openModalBtn");
-var span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function(event) {
-  event.preventDefault(); 
-  modal.style.left = "0";
-}
-
-span.onclick = function() {
-  modal.style.left = "-100%";
-}
-
-window.onclick = function(event) {
-  if (event.target === modal) {
-    modal.style.left = "-100%";
-  }
-}
-
-
-</script>
-
-</html>
-

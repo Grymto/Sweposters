@@ -1,4 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&display=swap");@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+footer {
+  background-color: rgb(236, 236, 236);
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer .container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+footer .container .flaggor {
+  width: 100%;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: contain;
+  display: block;
+}
+footer .container .content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 10%;
+}
+footer .container .content .column {
+  width: 20%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+footer .container .content .column .category-title {
+  margin-bottom: 15px;
+  font-family: "Luckiest Guy";
+  color: #000000;
+  margin-top: 25px;
+}
+footer .container .content .column nav.menu {
+  display: inline-block;
+}
+footer .container .content .column nav.menu ul {
+  padding: 0;
+}
+footer .container .content .column nav.menu ul li.Adress a {
+  text-decoration: none;
+  cursor: default;
+}
+footer .container .content .column nav.menu ul li.Adress a:hover {
+  text-decoration: none;
+}
+footer .container .content .column nav.menu ul li {
+  list-style-type: none;
+  padding: 5px 10px;
+  font-family: "Poppins";
+}
+footer .container .content .column nav.menu ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+footer .container .content .column nav.menu ul li a:hover {
+  text-decoration: underline;
+}
+footer .container .payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  color: #000000;
+}
+footer .container .payment-methods .payment-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+footer .container .payment-methods .payment-icons img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 10px;
+}
+footer .container .payment-methods .contact-info {
+  margin-top: 50px;
+  font-size: 0.9em;
+  max-width: 960px;
+  text-align: center;
+  font-family: "Poppins";
+}
+footer .container .rights {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  color: #000000;
+  font-family: "Poppins";
+}
+header.header {
+  background-color: #0693e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+header.header * {
+  font-family: "Luckiest Guy";
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1rem;
+}
+header.header .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header.header .menu li {
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: yellow;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+header.header .menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px 16px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+header.header .menu a:hover {
+  transform: scale(1.1);
+  color: black;
+}
+.top-header {
+  background-color: #0693e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Luckiest Guy";
+  height: 2.5rem;
+}
+.top-header .Logo {
+  font-size: 2rem;
+  color: yellow;
+}
+.top-header .Logo a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+.top-header .Logo a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: yellow;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s ease;
+}
+.top-header .Logo a:hover::after {
+  width: 100%;
+}
 body {
   margin: 0;
-  background: red;
+  background-color: #edeec7;
+  overflow-x: hidden;
 }

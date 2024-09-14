@@ -32,9 +32,7 @@ function register_menus() {
         'footer-kundservice' => __('Footer Kundservice'),
         'footer-sociala-medier' => __('Footer Sociala Medier'),
         'footer-här-finns-vi' => __('Footer Här Finns Vi'),
-        'headermenu-left' => __('headermenu-left'),
-        'headermenu-right' => __('headermenu-right'),
-        'headermenu-home' => __('headermenu-home')
+        'header-logo' => __('header-logo')
     ));
 }
 add_action('init', 'register_menus');

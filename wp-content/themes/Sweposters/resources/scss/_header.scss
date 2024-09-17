@@ -11,8 +11,8 @@ header.header {
   display: flex;
   justify-content: center;   // Horizontally centers the content in the header
   align-items: center;       // Vertically centers the content in the header
-  height: 70px;             // Set a height to ensure vertical centering works
-
+  height: 70px;           // Set a height to ensure vertical centering works
+  width: 100%;
   .menu {
     ul {
       display: flex;

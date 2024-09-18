@@ -56,6 +56,7 @@ header.header {
   align-items: center;
   font-family: $main-title-font;
   height: 2.5rem;
+  padding-top: 1%;
 
   .Logo {
     font-size: 2rem;
@@ -72,7 +73,7 @@ header.header {
       position: absolute;
       width: 0;
       height: 2px;              // The height of the underline
-      background-color: yellow; // Underline color
+      background-color: #ffff00; // Underline color
       left: 0;
       bottom: -2px;             // Position the underline just below the text
       transition: width 0.3s ease;  // Smooth transition for the underline width

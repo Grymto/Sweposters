@@ -2,10 +2,11 @@
 
 
 footer {
-  background-color: rgb(236, 236, 236);
+  background-color: #0693e3 236, 236, 236;
   padding: 0;
   margin: 0;
   width: 100%;
+  border: 1px solid black;
 }
 footer .container {
   display: flex;
@@ -179,7 +180,7 @@ header.header .menu a:hover {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: yellow;
+  background-color: #ffff00;
   left: 0;
   bottom: -2px;
   transition: width 0.3s ease;
@@ -336,6 +337,18 @@ header.header .menu a:hover {
 .wp-block-cover {
   height: 70vh; /* Controls the height of the entire banner */
   min-height: auto !important; /* Ensures no default min-height applies */
+}
+.has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family {
+  position: absolute;
+  left: 10px;
+}
+h1 {
+  font-style: italic;
+}
+.wp-block-heading.has-text-align-center {
+  margin: 0px;
+  font-size: 40px;
+  margin-top: 2%;
 }
 body {
   margin: 0;

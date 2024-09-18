@@ -1,3 +1,5 @@
+
+// banner img
 .wp-block-cover__background {
     background-size: contain !important; /* Ensures the entire image is visible */
     background-position: center center !important; /* Centers the image */
@@ -11,3 +13,9 @@
     min-height: auto !important; /* Ensures no default min-height applies */
 }
 
+// banner img text
+
+.has-text-align-left.has-black-color.has-text-color.has-source-serif-pro-font-family{
+    position: absolute;
+    left: 10px;
+}
